@@ -1,7 +1,7 @@
 # v2rayN
 A GUI client for Windows and Linux, support [Xray core](https://github.com/XTLS/Xray-core) and [v2fly core](https://github.com/v2fly/v2ray-core) and [others](https://github.com/2dust/v2rayN/wiki/List-of-supported-cores)
 
-最新版本v2rayN不支持windows 32位系統了，這裏只是構建了一個32位版本使用
+最新版本v2rayN不支持windows 32位系統了，這裏只是構建了一個32位版本使用,有問題請咨詢原項目
 
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/2dust/v2rayN)](https://github.com/2dust/v2rayN/commits/master)
 [![CodeFactor](https://www.codefactor.io/repository/github/2dust/v2rayn/badge)](https://www.codefactor.io/repository/github/2dust/v2rayn)
