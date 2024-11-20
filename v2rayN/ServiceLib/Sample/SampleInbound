@@ -1,18 +1,32 @@
 ﻿{
 	"tag": "tag1",
-	"port": 10808,
+	"port": 8117,
 	"protocol": "socks",
-	"listen": "127.0.0.1",
+	 "listen": "0.0.0.0",
 	"settings": {
 		"auth": "noauth",
-		"udp": true,
-		"allowTransparent": false
+		"udp": false,
+		"allowTransparent": true
 	},
 	"sniffing": {
-		"enabled": true,
+		"enabled": false,
 		"destOverride": [
 			"http",
 			"tls"
 		]
 	}
-} 
+}, 
+{
+  "IndexId": "4631243239195900715",
+  "SubIndexId": null,
+  "RunningCoreType": 2,
+  "CoreBasicItem": {
+    "LogEnabled": false,
+    "Loglevel": "warning",
+    "MuxEnabled": false,
+    "DefAllowInsecure": true,
+    "DefFingerprint": "random",
+    "DefUserAgent": "firefox",
+    "EnableFragment": true,
+    "EnableCacheFile4Sbox": true
+  }
