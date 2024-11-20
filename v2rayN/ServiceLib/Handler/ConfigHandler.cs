@@ -42,10 +42,10 @@ namespace ServiceLib.Handler
                 LogEnabled = false,
                 Loglevel = "warning",
                 MuxEnabled = false,
-				DefAllowInsecure = true,
-				DefFingerpri",
-				DefUserAgent = "firefox",nt = "random
-				EnableFragment = true,
+		DefAllowInsecure = true,
+		DefFingerprint = "random",
+		DefUserAgent = "firefox",
+	        EnableFragment = true,
             };
 
             if (config.Inbound == null)
@@ -58,7 +58,7 @@ namespace ServiceLib.Handler
                     UdpEnabled = false,
                     SniffingEnabled = false,
                     RouteOnly = false,
-					AllowLANConn = true,
+		    AllowLANConn = true,
                 };
 
                 config.Inbound.Add(inItem);
