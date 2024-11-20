@@ -16,14 +16,6 @@ dotnet publish `
 	-p:PublishSingleFile=true `
 	-o "$OutputPath\win-x86"
 
-dotnet publish `
-	.\v2rayN.Desktop\v2rayN.Desktop.csproj `
-	-c Release `
-	-r linux-x86 `
-	--self-contained true `
-	-p:PublishReadyToRun=false `
-	-p:PublishSingleFile=true `
-	-o "$OutputPath\linux-x86"
 
 
 if ( -Not $? ) {
@@ -32,7 +24,6 @@ if ( -Not $? ) {
 
 if ( Test-Path -Path .\bin\v2rayN ) {
     rm -Force "$OutputPath\win-x86\*.pdb"
-    rm -Force "$OutputPath\linux-x86\*.pdb"
 }
 
 Write-Host 'Build done'
