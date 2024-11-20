@@ -42,6 +42,10 @@ namespace ServiceLib.Handler
                 LogEnabled = false,
                 Loglevel = "warning",
                 MuxEnabled = false,
+				DefAllowInsecure = true,
+				DefFingerpri",
+				DefUserAgent = "firefox",nt = "random
+				EnableFragment = true,
             };
 
             if (config.Inbound == null)
@@ -50,10 +54,11 @@ namespace ServiceLib.Handler
                 InItem inItem = new()
                 {
                     Protocol = EInboundProtocol.socks.ToString(),
-                    LocalPort = 10808,
-                    UdpEnabled = true,
-                    SniffingEnabled = true,
+                    LocalPort = 8117,
+                    UdpEnabled = false,
+                    SniffingEnabled = false,
                     RouteOnly = false,
+					AllowLANConn = true,
                 };
 
                 config.Inbound.Add(inItem);
@@ -959,6 +964,7 @@ namespace ServiceLib.Handler
                 && o.Address == n.Address
                 && o.Port == n.Port
                 && o.Id == n.Id
+                && o.AlterId == n.AlterId
                 && o.Security == n.Security
                 && o.Network == n.Network
                 && o.HeaderType == n.HeaderType
@@ -967,10 +973,6 @@ namespace ServiceLib.Handler
                 && (o.ConfigType == EConfigType.Trojan || o.StreamSecurity == n.StreamSecurity)
                 && o.Flow == n.Flow
                 && o.Sni == n.Sni
-                && o.Alpn == n.Alpn
-                && o.Fingerprint == n.Fingerprint
-                && o.PublicKey == n.PublicKey
-                && o.ShortId == n.ShortId
                 && (!remarks || o.Remarks == n.Remarks);
         }
 
