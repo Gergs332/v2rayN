@@ -13,13 +13,7 @@ A GUI client for Windows and Linux, support [Xray core](https://github.com/XTLS/
 Check [Release files introduction](https://github.com/2dust/v2rayN/wiki/Release-files-introduction) and select the version you need to download 
 ### Windows
 - Run `v2rayN.exe`
-### Linux
-- `chmod +x v2rayN` Run `./v2rayN`
-```
-Debian 9+
-Ubuntu 16.04+
-Fedora 30+
-```
+
 
 ## Requirements  
 - [Microsoft .NET 8.0 Desktop Runtime ](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
